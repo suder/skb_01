@@ -41,6 +41,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.3",
     "chai": "^3.5.0",
+    "cors": "^2.8.1",
     "coveralls": "^2.11.14",
     "del": "^2.2.2",
     "eslint": "^3.8.0",
@@ -48,9 +49,9 @@
     "eslint-plugin-import": "^1.16.0",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
-    "nodemon": "^1.11.0",
     "sinon": "^2.0.0-pre.3"
   },
   "scripts": {

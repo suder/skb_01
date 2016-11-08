@@ -1,8 +1,10 @@
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 
-app.get('/', function (req, res) {
+app.get('/2a', function (req, res) {
 	let a = 0, b = 0, summ = 0;	
 	if (req.query.a) {
     	a = +req.query.a;
@@ -12,7 +14,6 @@ app.get('/', function (req, res) {
     	b = +req.query.b;
   	}
   	summ = a + b;
-  	//summ = new String(summ);
 	res.send(summ + "");
 });
 
