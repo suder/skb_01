@@ -39,6 +39,16 @@ app.get('/2b', function (req, res) {
 	}
 });
 
+
+/* Задача 2C: @username */
+app.get('/2c', function (req, res) {
+  let user = req.query.username.replace(/\s{2,}/g, '');
+  let result = user.match( /((http:|https:)?(\/\/)?(www.)?([a-z0-9-]+\.)?([a-z0-9-]+\/)?)?@?([a-zа-яё0-9._]+)/ );
+  result = result[result.length - 1];   
+  res.send(`@${result}`);
+});
+
+
 app.listen(3000, function () {
   console.log('On 3000!');
 });

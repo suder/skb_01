@@ -1,3 +1,14 @@
+## Задача 2C: @username 
+
+```javascript
+app.get('/2c', function (req, res) {
+  let user = req.query.username.replace(/\s{2,}/g, '');
+  let result = user.match( /((http:|https:)?(\/\/)?(www.)?([a-z0-9-]+\.)?([a-z0-9-]+\/)?)?@?([a-zа-яё0-9._]+)/ );
+  result = result[result.length - 1];   
+  res.send(`@${result}`);
+});
+```
+
 ## Задача 2B: Фамилия И. О. 
 
 ```javascript
