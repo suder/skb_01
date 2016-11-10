@@ -1,5 +1,5 @@
 ## Задача 2C: @username 
-
+[ **to line: [codepen.io](https://github.com/suder/skb_01/blob/master/src/index.js#L43)** ]
 ```javascript
 app.get('/2c', function (req, res) {
   let user = req.query.username.replace(/\s{2,}/g, '');
@@ -10,7 +10,7 @@ app.get('/2c', function (req, res) {
 ```
 
 ## Задача 2B: Фамилия И. О. 
-
+[ **to line: [codepen.io](https://github.com/suder/skb_01/blob/master/src/index.js#L16)** ]
 ```javascript
 app.get('/2b', function (req, res) {
 	let errors = false;
@@ -39,7 +39,7 @@ app.get('/2b', function (req, res) {
 ```
 
 ## Задача 2A: A + B
-
+[ **to line: [codepen.io](https://github.com/suder/skb_01/blob/master/src/index.js#L7)** ]
 ```javascript
 app.get('/2a', function (req, res) {
 	let summ = 0,	
